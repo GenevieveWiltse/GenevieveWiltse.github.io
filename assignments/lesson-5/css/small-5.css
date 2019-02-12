@@ -8,9 +8,9 @@ nav a:visited {
 }    
 body {
   font-family: 'Roboto', helvetica, sans-serif;
-  color: #133751;
+  color: #000;
   font-size: 2vh;
-  background-color: #1B539e;
+  background-color: #ffff;
   margin: 0 auto;
   padding: 0;
 }
@@ -32,7 +32,7 @@ a:active{
 /* Top Banner Styles */
 
 body>header{
-  background-color: #000087;
+  background-color: #2D50FF;
   margin: 0 auto;
   text-align: center;
 }
@@ -55,7 +55,7 @@ body>header{
   font-size: 1.16rem;
   font-family: 'trebuchet MS', sans-serif;
   font-style: italic;
-  color: #CEE5F2;
+  color: #fff;
   line-height: .7rem;
   text-align: center;
 }
@@ -88,7 +88,7 @@ h4 {
 
 nav {
   width: 100%;
-  background-color: #000000;
+  background-color: #ffffff;
   font-family: 'trebuchet MS', monospace;
   font-size: 1.25rem;
   text-align: center;
@@ -107,6 +107,7 @@ nav {
 .menubutton a:visited{
   color: #ffffff;
 }
+
 nav ul{
   display:none;
   list-style-type: none;
@@ -118,13 +119,13 @@ nav a {
   padding: 5px;
   color: #ffffff;
   text-decoration: none;
-  text-shadow: 1px 1px 2px #ffffff;
+  text-shadow: 1px 1px 2px #000000;
   border-width: 0px 0px 1px 0px;
   border-style: solid;
 }
 nav a:hover{
   color: #ffffff;
-  text-shadow: 0 0 6px #ffe348;
+  text-shadow: 0 0 6px #ffc000;
 }
 nav a:visited{
   color: #CEE5F2;
@@ -136,7 +137,7 @@ nav a:active{
   color: #ffc000;
 }
 .thispage {
-  background-color: #1B5399;
+  background-color: #2D50FF;
 }
 .thispage a:hover{
   text-shadow: 0 0 4px #ffc000, 0 0 6px #FFFFFF;
@@ -164,10 +165,10 @@ main {
   margin-left: 1rem;
   margin-top: 1rem;
   padding: 0 .5rem .5rem .5rem; 
-  width: 75%;
+  width: 50%;
   height: 18rem;
   text-align: left;
-  font-size: 1rem;
+  font-size: .8rem;
   background-color: #282828;
   color: white;
   overflow: auto; 
@@ -184,7 +185,7 @@ main {
   flex-flow: column-reverse nowrap;
   margin-top: 2.5rem;
   padding: 0.5rem 1rem 1rem 1rem;
-  border: 1px solid #282828;
+  border: 2px solid #000;
   border-radius: .2rem;
 }
 .featured h2{
@@ -213,7 +214,7 @@ main {
   justify-content: space-around;
   margin-top: 1rem;
   padding: .5rem;
-  background-color: #133751;
+  background-color: #2D50FF;
   color: #ffffff;
 }
 .contact_item {
@@ -221,7 +222,7 @@ main {
   margin: auto;
 }
 .contact h4{
-  color: #ffe348;
+  color: #ffc000;
 }
 
 /* Footer Styles */
@@ -250,8 +251,8 @@ footer a {
   border-style: solid;
 }
 footer a:hover{
-  color: #ffffff;
-  text-shadow: 0 0 6px #ffe348;
+  color: #ffc000;
+  text-shadow: 0 0 6px #ffff;
 }
 footer a:visited{
   color: #ffffff;
@@ -260,5 +261,5 @@ footer a:focus{
   color: #cee5f2;
 }
 footer a:active{
-  color: #ffe348;
+  color: #ffc000;
 }

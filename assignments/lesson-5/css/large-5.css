@@ -29,7 +29,7 @@ a:active{
 /* Top Banner Styles */
 
 body>header{
-  background-color: #000087;
+  background-color: #2D50ff;
   margin: 0 auto;
   text-align: center;
 }
@@ -90,7 +90,7 @@ nav {
   background-color: #282828;
   font-family: 'Trebuchet MS', monospace;
   font-size: 1.25rem;
-  text-align: center;
+  text-align: right;
   line-height: 2rem;
 }
 .menubutton {
@@ -267,7 +267,7 @@ li {
     justify-content: space-around;
     margin-top: 1rem;
     padding: .5rem;
-    background-color: #133751;
+    background-color: #2d50ff;
     color: #ffffff;
 }
 .contact_item {
