@@ -154,7 +154,7 @@ main {
   margin: 0;
   height: 18rem;
   width: 100%;
-  background:url(../images/herobanner_sm.jpg) top left no-repeat;
+  background:url(../images/hero_banner_small.jpg) top left no-repeat;
   background-size: cover;
   background-color: black;
 }

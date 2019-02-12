@@ -150,7 +150,7 @@ main {
   padding: 0;
   margin: 0 1rem 0 1rem;
   height: 18rem;
-  background:url(../images/herobanner.jpg) top left no-repeat;
+  background:url(../images/hero_banner_large.png) top left no-repeat;
   background-size: cover;
   background-color: black;
 }
