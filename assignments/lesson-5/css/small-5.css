@@ -193,6 +193,7 @@ main {
 }
 .featured p{
   text-indent: 1rem;
+  text-align: justify;
 }
 .author {
   margin-top: 0;
