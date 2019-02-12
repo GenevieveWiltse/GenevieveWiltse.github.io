@@ -12,55 +12,63 @@
 
     <link href="css/normalize.css" rel="stylesheet">
 
-    <link href="css/small-5.css" rel="stylesheet">
+    <link href="css/small-5.css" rel="stylesheet" media="screen and (max-width: 500px)">
     
-    <link href="css/large-5.css" rel="stylesheet">
+    <link href="css/large-5.css" rel="stylesheet" media="screen and (min-width: 501px)">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+
+    <style type="text/css">
+          
+    </style>
 </head>
-
 <body>
-
     <header>
-            <h1>SkyNow.info</h1>
-    <div>
-  
-    <img src="images/logo2.png" alt="SkyNow.info logo">
-
-    <div class="motto">
-            <p>Looking down to see what's up</p>
-    </div>
-</div>
-    </header>
-
-    <div>
-        
-    <article>
-            
-    <header>
-            <h2>
-
-             </h2>
-     </header>
-       
-    </article>
-    
-    </div>
-
+        <!--Header divisions for CSS Styling-->
+        <div class="sitelogo">
+        <img src="images/logo_draft.png" alt="SkyNow.info logo">
+            <div class="motto">Looking Down to See What's Up</div>
+            <br>
     <nav>
+    <div class="menubutton">
+        <a href="#">...</a>
+        "Menu"
+        </a>
+    </div>
+    </nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="thispage" href="preston-4.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter">Storm Center</a></li>
+            <li><a href="gallery">Gallery</a></li>
         </ul>
     </nav>
+    </header>
+    <main>
+        <h1 class="city">Preston, Idaho</h1>
+        <figure class="hero">
+            <aside class="summary">
+                <h3>Weather Summary</h3>
+                <ul>
+                    <li>Current Weather: 12° Windy</li>
+                    <li>Temperature High/Low: 15°/7°</li>
+                    <li>Precipitation: 0%</li>
+                    <li>Humidity: 20%</li>
+                    <li>Wind Speed: 10mph</li>
+                </ul>
+                </aside>
+                </figure>
+            <section class="fiveday">
+            <h2>Five Day Forecast</section>
+                <div class="forecastbox">
+                    <img class="forecast" src="images/weekly_forecast.jpg" alt="Monday to Friday Weather">
+                </div>
+            
     
-    <main role="main">
-        <h2>The Town of Preston, ID</h2>
+      
    
    
 

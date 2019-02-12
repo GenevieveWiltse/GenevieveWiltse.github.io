@@ -1,88 +1,264 @@
 /* CIT 230 - Assignment Portal CSS Template */
 
 
-
+@media screen and (max-width: 500px) {
+}
+nav a:visited {
+    color: #CEE5F2;
+}    
 body {
-   
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: 'Roboto', helvetica, arial, sans-serif;
-    background-color:#1B539e;
+  font-family: 'Roboto', helvetica, sans-serif;
+  color: #133751;
+  font-size: 2vh;
+  background-color: #1B539e;
+  margin: 0 auto;
+  padding: 0;
 }
-    
-h1 {
-    font-size: 2rem;
-    text-align: center;
-    }
+a {
+  color: #ffffff;
+}
+a:hover{
+  color: #ffc000;
+}
+a:visited{
+  color: #000000;
+}
+a:focus{
+  color: #ffffff;
+}
+a:active{
+  color: #ffc000;
+}
+/* Top Banner Styles */
 
+body>header{
+  background-color: #000087;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sitehead{
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  vertical-align: middle;
+  text-align: left;
+  vertical-align: center;
+}
+.sitelogo {
+  display: inline-block;
+  vertical-align: left;
+  padding: .5rem;
+}
+
+.motto {
+  font-size: 1.16rem;
+  font-family: 'trebuchet MS', sans-serif;
+  font-style: italic;
+  color: #CEE5F2;
+  line-height: .7rem;
+  text-align: center;
+}
+
+/* Page Heading Styles */
+
+h1, h2, h3 {
+  font-family: 'trebuchet MS', monospace; 
+}
+h1{
+  font-size: 2rem;
+}
 h2 {
-    font-size: 1.25rem;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline;
+}
+.city {
+  text-align: center;
 }
 
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width:500px ;
-    
+/* Header Navigation Styles */
+
+nav {
+  width: 100%;
+  background-color: #000000;
+  font-family: 'trebuchet MS', monospace;
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 2rem;
+}
+.menubutton {
+  display: block;
+  background-color: #ffc000;
+}
+.menubutton a {
+  display: block;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+}
+.menubutton a:visited{
+  color: #ffffff;
+}
+nav ul{
+  display:none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #ffffff;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+}
+nav a:hover{
+  color: #ffffff;
+  text-shadow: 0 0 6px #ffe348;
+}
+nav a:visited{
+  color: #CEE5F2;
+}
+nav a:focus{
+  color: #cee5f2;
+}
+nav a:active{
+  color: #ffc000;
+}
+.thispage {
+  background-color: #1B5399;
+}
+.thispage a:hover{
+  text-shadow: 0 0 4px #ffc000, 0 0 6px #FFFFFF;
+  background-color: #cee5f2;
 }
 
-header, footer, footer a {
-    text-align: center;
-    background-color:#1B5399;
-    color: black ;
+main {
+  margin: 0 .5rem 0 .5rem;
 }
 
-header img {
-    width: 20rem;
-    height: auto;
-    float: left;
+/* Hero & Summary Section */
+.hero {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 18rem;
+  width: 100%;
+  background:url(../images/herobanner_sm.jpg) top left no-repeat;
+  background-size: cover;
+  background-color: black;
 }
-/* Dropdown Button */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
-  
+.summary {
+  float: left;
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding: 0 .5rem .5rem .5rem; 
+  width: 75%;
+  height: 18rem;
+  text-align: left;
+  font-size: 1rem;
+  background-color: #282828;
+  color: white;
+  overflow: auto; 
+}
+/* Five Day Forecast Section */
+.fiveday {
+  display: none;
+}
 
+/* Article Section */
 
+.featured {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  margin-top: 2.5rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  border: 1px solid #282828;
+  border-radius: .2rem;
+}
+.featured h2{
+  margin-bottom: 0;
+}
+.featured p{
+  text-indent: 1rem;
+}
+.author {
+  margin-top: 0;
+  margin-left: 1rem;
+  padding-top: 0;
+  font-size: .7rem;
+  font-style: italic;       
+}
+.featured_item{
+  max-width:100%;
+  margin: auto;
+}
+
+/* Contact Section */
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+  padding: .5rem;
+  background-color: #133751;
+  color: #ffffff;
+}
+.contact_item {
+  max-width:100%;
+  margin: auto;
+}
+.contact h4{
+  color: #ffe348;
+}
+
+/* Footer Styles */
 footer {
-    font-size: 13px;
+  margin: 0px;
+  background-color: #282828;
+  color: #FFFFFF;
+  font-size: .7rem;
+  text-align: center;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+footer div{
+  padding: .5rem;
+  display: inline-flex;
+}
+
+footer a {
+  color: #CEE5F2;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #000000;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+}
+footer a:hover{
+  color: #ffffff;
+  text-shadow: 0 0 6px #ffe348;
+}
+footer a:visited{
+  color: #ffffff;
+}
+footer a:focus{
+  color: #cee5f2;
+}
+footer a:active{
+  color: #ffe348;
 }
