@@ -107,7 +107,18 @@ nav {
 .menubutton a:visited{
   color: #ffffff;
 }
-
+.navlinks{
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navlinks_show{
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  margin: 0;
+}
 nav ul{
   display:none;
   list-style-type: none;
@@ -118,30 +129,30 @@ nav ul{
 nav a {
   display: block;
   padding: 5px;
-  color: #ffffff;
+  color: #ffc000;
   text-decoration: none;
   text-shadow: 1px 1px 2px #000000;
-  border-width: 0px 0px 1px 0px;
+  border-width: 2px 2px 1px 2px;
   border-style: solid;
 }
 nav a:hover{
-  color: #ffffff;
+  color: #2D50FF;
   text-shadow: 0 0 6px #ffc000;
 }
 nav a:visited{
-  color: #CEE5F2;
+  color: #cee5f2;
 }
 nav a:focus{
   color: #cee5f2;
 }
 nav a:active{
-  color: #ffc000;
+  color: #2d50ff;
 }
 .thispage {
-  background-color: #2D50FF;
+  background-color: #2d50ff;
 }
 .thispage a:hover{
-  text-shadow: 0 0 4px #ffc000, 0 0 6px #FFFFFF;
+  text-shadow: 0 0 4px #ffc000, 0 0 6px #ffff;
   background-color: #cee5f2;
 }
 
@@ -151,14 +162,23 @@ main {
 
 /* Hero & Summary Section */
 .hero {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  height: 18rem;
   width: 100%;
-  background:url(../images/hero_banner_small.jpg) top left no-repeat;
-  background-size: cover;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  margin: 0 .5rem 0 .5rem;
+  height: 18rem;
   background-color: black;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  display: flex;
+  z-index: 0;
+  object-fit: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 .summary {
   list-style-type: none;
@@ -172,6 +192,7 @@ main {
   text-align: left;
   font-size: .8rem;
   background-color: #282828;
+  opacity: .8;
   color: white;
   overflow: auto; 
   
