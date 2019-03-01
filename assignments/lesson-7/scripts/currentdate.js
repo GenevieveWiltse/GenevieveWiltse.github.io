@@ -1,3 +1,5 @@
+
+function currentdate() {
 var d = document;
 var currentdate = new Date();
 
@@ -34,3 +36,4 @@ var datetime = weekday[currentdate.getDay()] + ", " +
 
 var time = d.getElementById("currentdate");
 time.innerHTML = datetime;
+}
