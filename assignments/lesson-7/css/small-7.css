@@ -77,6 +77,9 @@ h1{
 }
 h2 {
   font-size: 1.25rem;
+  position: relative; 
+  top: 5px;
+  margin-left: 20px;
 }
 h3 {
   font-size: 1.2rem;
