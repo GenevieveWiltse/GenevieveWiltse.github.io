@@ -41,6 +41,37 @@ header img {
     float: right;
 }
 
+form#st {
+    margin: 10%;
+    font-family: Lora, sans-serif;
+}
+
+fieldset {
+    background-color: tan;
+    border-radius: .8em;
+    margin: 1.5em 0;
+}
+
+legend {
+    color: brown;
+    margin-left: 6%;
+    padding: 2px;
+    border: black solid 1px;
+    background-color: bisque;
+    border-radius: .4em;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    padding-top: .3em;
+}
+
 footer {
     font-size: 13px;
 }

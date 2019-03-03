@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     
+    <title>Preston, Idaho Weather | SkyNow.info</title>
+      
+    <meta name="description" content="Local weather forecast for Preston, Idaho">
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="css/small-8.css" rel="stylesheet" media="screen and (max-width: 500px)">
+
+    <link href="css/medium-8.css" rel="stylesheet" media="screen and (min-width: 501px"> 
+    
+    <link href="css/large-8.css" rel="stylesheet" media="screen and (min-width: 1025px)">
+
+    <link href="css/stormcenterform.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="scripts/currentdate.js"></script>
+
+    <script src="scripts/hamburger.js"></script>
+
+    <script src="scripts/windchill.js"></script>
+
+    <script src="scripts/stormcenter.js"></script>
+
+    <style type="text/css"></style>
+        
+    </head>
+<body onload="calculatewindchill()">
+    <header> 
+        <!--Header divisions for CSS Styling-->
+        <div class="headwrap">
+        <div class="sitelogo">
+        <img src="images/logo_draft.png" alt="SkyNow.info logo">
+            <div class="motto">Looking Down to See What's Up</div>
+            <br>
+        </div>
+    <nav>
+    <div class="menubutton">
+        <a onclick="toggleNav()">Menu</a>        
+    </div>
+
+        <ul id="navigation" class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="thispage" href="preston-4.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter-8.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+           <h2 class="menuname">Storm Center</h2>
+           <fieldset>
+               <legend>Personal Information</legend>
+               <label>
+                   <span>Full Name:</span>
+                   <input type="text" name="fullname" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+${5,}'" required>
+               </label>
+               <label>
+                   <span>Email:</span>
+                   <input type="email" name="email" placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                   </label>
+                   <label>
+                       <span>Phone Number</span>
+                       <input type="tel" name="phone" placeholder="No spaces or dashes" required>
+                   </label>
+                   <label>
+                       <span>Zip Code</span>
+                       <input type="number" name="zipcode" required>
+                   </label>
+               </fieldset> 
+               <fieldset>
+                   <legend>Storm Tracker</legend>
+                   <label>
+                       <span>Storm Date</span>
+                       <input type="date" name="stormdate">
+                   </label>
+                   <label>
+                   <span>Storm Type</span>
+                   <input type="text" name="storms" list="stormtype">
+                   </label>
+                   <datalist id="stormtype">
+                       <option value="Flash Flood"></option>
+                       <option value="Hail"></option>
+                       <option value="Hurricane"></option>
+                       <option value="Thunderstorm"></option>
+                       <option value="Tornado"></option>
+                   </datalist>
+                   <label for="rating">Rating (1 to 10):</label>
+                   <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                   <span id="ratingvalue"></span><br>
+                       <label>
+                       <span>Region:</span>
+                       <select name="city">
+                           <option value="selectregion">Select Region</option>
+                           <option value="Preston">Preston</option>
+                           <option value="Soda Springs">Soda Springs</option>
+                           <option value="Fish Haven">Fish Haven</option>
+                       </select>
+                       <label>Are you in any danger?</label>
+                       <input type="radio" name="yes">
+                       Yes
+                       <input type="radio" name="maybe">
+                       Maybe
+                       <input type="radio" name="no">
+                       No
+                       <label>Comments:</label>
+                       <textarea name="comments" rows="4" cols="50"></textarea>
+                       <label>
+                           <input type="submit" name="Submit">
+                       </label>
+                   </fieldset>
+                </form>
+       <footer>
+        <div>&copy; 2019 |  Genevieve Wiltse  </div>
+        <div>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div>
+         <span id="currentdate">February 22, 2019</span>
+        </div>
+        </footer>
+    </main>
+   <script>currentdate()</script>
+</body>
+</html>
