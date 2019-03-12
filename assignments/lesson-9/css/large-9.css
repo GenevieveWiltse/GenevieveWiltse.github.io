@@ -225,14 +225,23 @@ main {
   flex-flow: row nowrap;
 }
 
+.threetowns h2{
+  text-align: center;
+  padding: .25em
+}
+
+
 .threetowns {
-  width:100%;
-  flex-flow: column 1 1 1;
+  width:33%;
+  flex: column;
   align-self: stretch;
   align-items: center;
-  max-height: 50%;
+  max-height: 33%;
   margin-bottom: 0;
+  background-color: white;
+  box-shadow: 0 3px 3px darkslategray;
 }
+
 .threetowns div {
   width:100%;
   margin-bottom: 1rem;
@@ -241,7 +250,6 @@ main {
   width:100%;
   margin-top: auto;
 }
-
 
 .threetowns:last-child{
   margin-bottom: 0;
@@ -255,12 +263,12 @@ main {
   margin-bottom: 1rem;
 }
 
-
 .threetowns a img {
   width:100%;
   border-radius: .2rem;
   margin-top: auto;
 }
+
 .motto {
   font-size: 1rem;
   line-height: .25;
@@ -268,13 +276,15 @@ main {
   font-style: italic;
   color: black;
   }
-/* Home Page - News Section */
+
+  /* Home Page - News Section */
 
 .umbrella img{
   max-width: 100%;
-  align-self:right;
+  float: right; 
+  padding: 0 0 0 10em
+  
 }
-
 
 .news {
   display: flex;
@@ -292,18 +302,19 @@ main {
   flex-flow: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: .5rem;
-  border: 1px solid darkgray;
+  padding: 5em 10em 5em 13em;
+  border: 5px solid black;
   border-radius: .2rem;
   font-size: 1rem;
   color: black;
 }
 .news_story h2{
-  font-size: 2em;
+  font-size: 3em;
   color: black;
+  text-align: center;
 }
 .news_story h3{
-  font-size: 1em;
+  font-size: 2em;
   text-align: center;
   color: black;
 }
