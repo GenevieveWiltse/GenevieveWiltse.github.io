@@ -232,9 +232,8 @@ main {
 
 
 .threetowns {
+  flex-flow: column nowrap;
   width:33%;
-  flex: column;
-  align-self: stretch;
   align-items: center;
   max-height: 33%;
   margin-bottom: 0;
@@ -248,7 +247,7 @@ main {
   margin-bottom: 1rem;
 }
 .threetowns a {
-  width:100%;
+  width: 100%;
   margin-top: auto;
 }
 
