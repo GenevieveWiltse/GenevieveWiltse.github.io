@@ -235,7 +235,6 @@ main {
   flex-flow: column nowrap;
   width:33%;
   align-items: center;
-  max-height: 33%;
   margin-bottom: 0;
   background-color: white;
   border-radius: .5rem;
