@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     
+    <title>Preston, Idaho Weather | SkyNow.info</title>
+      
+    <meta name="description" content="Local weather forecast for Preston, Idaho">
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="css/small-8.css" rel="stylesheet" media="screen and (max-width: 500px)">
+
+    <link href="css/medium-8.css" rel="stylesheet" media="screen and (max-width: 501px)"> 
+    
+    <link href="css/large-8.css" rel="stylesheet" media="screen and (min-width: 1025px)">
+
+    <link href="css/stormcenterform.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="scripts/currentdate.js"></script>
+
+    <script src="scripts/hamburger.js"></script>
+
+    <script src="scripts/windchill.js"></script>
+
+    
+        
+    </head>
+<body onload="calculatewindchill()">
+    <header> 
+        <!--Header divisions for CSS Styling-->
+        <div class="headwrap"></div>
+        <div class="sitelogo">
+        <img src="images/logo_draft.png" alt="SkyNow.info logo">
+            <div class="motto">Looking Down to See What's Up</div>
+            <br>
+        </div>
+    <nav>
+    <div class="menubutton">
+        <a onclick="toggleNav()">Menu</a>        
+    </div>
+
+        <ul id="navigation" class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="thispage" href="preston-4.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter-8.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+       <h2 class="menuname">Storm Center</h2>
+
+       <h1 class="thankyou"> Thank you, we appreciate your storm report.</h1>
+
+       <a href="stormcenter.html">Return to Storm Center</a>
+    
+            <section class="contact">
+                <div class="contact_item">
+                    <h4>SkyNow.info</h4>
+                    <p>
+                        360 3rd Avenue East
+                        <br>
+                        Preston, ID 90210
+                    </p>
+                    <p>
+                        (555)906-8723
+                        <br>
+                        skynowinfo@weather.com
+                    </p>
+                </div>
+                <img class="contact_item" src="images/preston_map.png" alt="Map of Preston, Idaho">
+            </section>      
+       <footer>
+        <div>&copy; 2019 |  Genevieve Wiltse  </div>
+        <div>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div>
+         <span id="currentdate">February 22, 2019</span>
+        </div>
+        </footer>
+    </main>
+   <script>currentdate()</script>
+</body>
+</html>

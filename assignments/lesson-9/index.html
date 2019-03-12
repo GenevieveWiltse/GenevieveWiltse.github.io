@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     
+    <title>Preston, Idaho Weather | SkyNow.info</title>
+      
+    <meta name="description" content="Local weather forecast for Preston, Idaho">
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="css/small-9.css" rel="stylesheet" media="screen and (max-width: 500px)">
+
+    <link href="css/medium-9.css" rel="stylesheet" media="screen and (min-width: 501px)"> 
+    
+    <link href="css/large-9.css" rel="stylesheet" media="screen and (min-width: 1025px)">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="scripts/currentdate.js"></script>
+
+    <script src="scripts/hamburger.js"></script>
+
+    <script src="scripts/windchill.js"></script>
+
+    <script src="scripts/towndata.js"></script>
+       
+    </head>
+<body onload="calculatewindchill()">
+    <header> 
+        <!--Header divisions for CSS Styling-->
+        <div class="headwrap"></div>
+        <div class="sitelogo">
+        <img src="images/logo_draft.png" alt="SkyNow.info logo">
+            <div class="motto">Looking Down to See What's Up</div>
+            <br>
+        </div>
+    <nav>
+    <div class="menubutton">
+        <a onclick="toggleNav()">Menu</a>        
+    </div>
+
+        <ul id="navigation" class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section id="threetowns"></section>
+      
+            <article class="threetowns">
+                <div>
+                    <h2>Preston</h2>
+                    <p class="motto">Home of Napoleon Dynamite</p>
+                    <p>Founded in 1866</p>
+                    <p>Population: 5204</p>
+                    <p>Annual Rainfall: 16.65"</p>
+                </div>
+                <a href="preston-9.html">
+                    <img src="images/preston_home.jpg" alt="View of Preston town in Idaho">
+                </a>
+            </article>
+            <article class="threetowns">
+                <div>
+                    <h2>Soda Springs</h2>
+                    <p class="motto">Historic Oregon Trail Oasis.</p>
+                    <p class="motto">The Soda is on Us.</p>
+                    <p>Founded in 1858</p>
+                    <p>Population: 2985</p>
+                    <p>Annual Rainfall: 15.75"</p>
+                </div>
+                <a href="sodasprings.html">
+                <img src="images/soda_springs_home.jpg" alt="View of Soda Springs town in Idaho">
+                </a>
+            </article>
+            <article class="threetowns">
+                <div>
+                    <h2>Fish Haven</h2>
+                    <p class="motto">This is Fish Heaven</p>
+                    <p>Founded in 1864</p>
+                    <p>Population: 501</p>
+                    <p>Annual Rainfall: 14.2"</p>
+                </div>
+                <a href="fishhaven.html">
+                    <img src="images/fish_haven_home.jpg" alt="View of Fish Haven town in Idaho">
+            </article>
+            <div class="news">
+                <article class="newsupdate">
+                    <div class="umbrella">
+                        <img src="images/weather_news.jpg" alt="colorful umbrellas in a group">
+                    </div>
+                     <div class="news_story">
+                <h2>In the Weather...</h2>
+                <h3>Hail Expected This Weekend</h3>
+                <p>If your garage is full, you still have time to empty it to cover your vehicle before hail hits. 
+                    The storm has been moving slowly from the north and expected to hit Preston early Saturday 
+                    afternoon. Hail the size of golf balls has been reported. This weather phenomena occurs when 
+                     the cool northern air hits the southern warm air. Continue to check here for regular news updates.
+                </p>
+            </div>
+        </article>
+            <section class="contact">
+                <div class="contact_item">
+                    <h4>SkyNow.info</h4>
+                    <p>
+                        360 3rd Avenue East
+                        <br>
+                        Preston, ID 90210
+                    </p>
+                    <p>
+                        (555)906-8723
+                        <br>
+                        skynowinfo@weather.com
+                    </p>
+                </div>
+                <img class="contact_item" src="images/preston_map.png" alt="Map of Preston, Idaho">
+            </section>      
+       <footer>
+        <div>&copy; 2019 |  Genevieve Wiltse  </div>
+        <div>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div>
+         <span id="currentdate">February 22, 2019</span>
+        </div>
+        </footer>
+    </main>
+   <script>currentdate()</script>
+</body>
+</html>

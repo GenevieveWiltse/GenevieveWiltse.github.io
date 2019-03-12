@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     
+    <title>Preston, Idaho Weather | SkyNow.info</title>
+      
+    <meta name="description" content="Local weather forecast for Preston, Idaho">
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="css/small-9.css" rel="stylesheet" media="screen and (max-width: 500px)">
+
+    <link href="css/medium-9.css" rel="stylesheet" media="screen and (min-width: 501px)"> 
+    
+    <link href="css/large-9.css" rel="stylesheet" media="screen and (min-width: 1025px)">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="scripts/currentdate.js"></script>
+
+    <script src="scripts/hamburger.js"></script>
+
+    <script src="scripts/windchill.js"></script>
+       
+    </head>
+<body onload="calculatewindchill()">
+    <header> 
+        <!--Header divisions for CSS Styling-->
+        <div class="headwrap"></div>
+        <div class="sitelogo">
+        <img src="images/logo_draft.png" alt="SkyNow.info logo">
+            <div class="motto">Looking Down to See What's Up</div>
+            <br>
+        </div>
+    <nav>
+    <div class="menubutton">
+        <a onclick="toggleNav()">Menu</a>        
+    </div>
+
+        <ul id="navigation" class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="thispage" href="preston-4.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <h1 class="city">Preston, Idaho</h1>
+        <figure class="hero">
+            <img alt="Preston Idaho" srcset="images/hero_banner_500.jpg 500w, images/hero_banner_768.jpg 768w, 
+            images/hero_banner_1366.jpg 1366w, images/hero_banner_1920.jpg 1920w" sizes="100vw" src="images/hero_banner_500.jpg">
+            <aside class="summary">
+                <h3>Weather Summary</h3>
+                <div class="highlow">
+                <p>
+                    High:   
+                    <span id="highTemp">40</span>
+                    °F
+                </p>
+                <p>
+                    Low:    
+                    <span id="lowTemp">20</span>
+                    °F
+                </p>
+                </div>
+                <div class="conditions">
+                <p>Currently: 32 °F</p>
+                <p>Precipitation: 5%</p>
+                <p>Humidity:      10%</p>
+                <p>Wind Speed:    
+                    <span id="windSpeed">25</span>
+                    mph
+                </p>
+                <p> Wind Chill: 
+                    <span id="windchill"></span>
+                    °F
+                </p>
+                </div>
+            </div>
+                </aside>
+                </figure>
+            <section class="fiveday">
+            <h2>Five Day Forecast</h2>
+                <div class="forecastbox">
+                    <img class="forecast" src="images/weekly_forecast.jpg" alt="Monday to Friday Weather">
+                </div>
+            </section>
+            <article class="featured">
+                <div class="featured_item">
+                    <img class="featured_item" src="images/rainbow_resize.jpg" alt="Rainbow in field">
+                    <h2>Cloudy with a Chance of Rainbows</h2>
+                    <span class="author">by Genevieve Wiltse</span>
+                    <p>
+                        The rain didn't put a damper on the annual Farmer's Winter Fest this weekend. Shortly after a much needed hard downpour, 
+                        the skies parted and a beautiful double rainbow appeared. Festivities continued as 
+                        scheduled and the indoor/outdoor event brought people from all over. Crafts and desserts were displayed
+                        and sold all weekend long, with a chili cook-off and barn dance to close the well attended event.
+
+                    <p>                     
+                        Farmers in the local area have been worried about the lack of precipitation this winter season, especially
+                        with the farming season quickly approaching. They're happy to see any rain or even snow at this point, 
+                        which will help ensure good sources of irrigation water for fields and livestock. Last year at this time, 
+                        the amount of precipitation was down 10% from the annual average, and currently it is down 15%.
+                        
+                    <p>Local farmers are already looking at testing new hardier seeds to be able to endure the lack of precipitation, 
+                        which appears to be the new weather norm, and not..."
+                    <a href="#" class="continue">continue
+                                                to read full article</a>
+                    </p>
+                </div>
+            </article>
+            <section class="contact">
+                <div class="contact_item">
+                    <h4>SkyNow.info</h4>
+                    <p>
+                        360 3rd Avenue East
+                        <br>
+                        Preston, ID 90210
+                    </p>
+                    <p>
+                        (555)906-8723
+                        <br>
+                        skynowinfo@weather.com
+                    </p>
+                </div>
+                <img class="contact_item" src="images/preston_map.png" alt="Map of Preston, Idaho">
+            </section>      
+       <footer>
+        <div>&copy; 2019 |  Genevieve Wiltse  </div>
+        <div>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div>
+         <span id="currentdate">February 22, 2019</span>
+        </div>
+        </footer>
+    </main>
+   <script>currentdate()</script>
+</body>
+</html>
