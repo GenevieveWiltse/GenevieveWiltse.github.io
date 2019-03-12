@@ -239,7 +239,8 @@ main {
   max-height: 33%;
   margin-bottom: 0;
   background-color: white;
-  box-shadow: 0 3px 3px darkslategray;
+  border-radius: .5rem;
+  box-shadow: 0 6px 6px darkslategray;
 }
 
 .threetowns div {
@@ -279,11 +280,10 @@ main {
 
   /* Home Page - News Section */
 
-.umbrella img{
+.umbrella img {
   max-width: 100%;
   float: right; 
-  padding: 0 0 0 10em
-  
+  padding: 0 0 0 10em 
 }
 
 .news {
