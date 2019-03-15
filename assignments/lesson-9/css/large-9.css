@@ -226,45 +226,43 @@ main {
   flex-flow: row nowrap;
 }
 
-.threetowns h2{
+.three_towns h2{
   text-align: center;
   padding: .25em
 }
 
-
-.threetowns {
+.three_towns {
   flex-flow: column nowrap;
-  width:33%;
-   max-height:33%;
-  align-items: center;
-  align-self: stretch;
+  width:50%;
+  max-height: 50%;
   margin-bottom: 0;
   background-color: white;
   border-radius: .5rem;
-  box-shadow: 0 6px 6px darkslategray;  
+  box-shadow: 0 6px 6px darkslategray;
 }
-.threetowns div {
+
+.three_towns div {
   width:100%;
   margin-bottom: 1rem;
 }
-.threetowns a {
+.three_towns a {
   width: 100%;
   margin-top: auto;
 }
 
-.threetowns:last-child{
+.three_towns:last-child{
   margin-bottom: 0;
 }
-.threetowns div p {
+.three_towns div p {
   padding: .5rem;
   margin: 0;
   text-align: center;
 }
-.threetowns div:last-child {
+.three_towns div:last-child {
   margin-bottom: 1rem;
 }
 
-.threetowns a img {
+.three_towns a img {
   width:100%;
   border-radius: .2rem;
   margin-top: auto;
@@ -277,6 +275,7 @@ main {
   font-style: italic;
   color: black;
   }
+
 
   /* Home Page - News Section */
 

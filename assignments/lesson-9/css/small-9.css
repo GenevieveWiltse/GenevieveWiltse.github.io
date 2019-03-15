@@ -210,12 +210,13 @@ main {
 
 /* Home Page*/
 
-.threetowns h2 {
+.three_towns h2 {
   font-size: 1.5rem;
   font-family: 'Roboto', helvetica, sans-serif;
+
 }
 
-.threetowns {
+.three_towns {
   display:flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -227,20 +228,20 @@ main {
   box-shadow: 0 3px 3px darkgray;
 }
   
-.threetowns div {
+.three_towns div {
   text-align: center;
   margin-bottom: 2rem
   
 }
-.threetowns:last-child{
+.three_towns:last-child{
   margin-bottom: 0;
 }
-.threetowns div p {
+.three_towns div p {
   padding: .5rem;
   margin: 0;
   text-align: center;
 }
-.threetowns div:last-child {
+.three_towns div:last-child {
   margin-bottom: 1rem;
 }
 .motto {
@@ -251,7 +252,7 @@ main {
   color: black;
   }
 
-.threetowns a img {
+.three_towns a img {
   width:100%;
   border-radius: .2rem;
   margin-top: auto;
