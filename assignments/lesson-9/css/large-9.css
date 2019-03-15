@@ -235,13 +235,14 @@ main {
 .threetowns {
   flex-flow: column nowrap;
   width:33%;
+   max-height:33%;
   align-items: center;
+  align-self: stretch;
   margin-bottom: 0;
   background-color: white;
   border-radius: .5rem;
-  box-shadow: 0 6px 6px darkslategray;
+  box-shadow: 0 6px 6px darkslategray;  
 }
-
 .threetowns div {
   width:100%;
   margin-bottom: 1rem;
