@@ -224,6 +224,7 @@ main {
   margin: 0 .5rem 2rem .5rem;
   border-radius: .5rem;
   font-size: 1rem;
+  
   background-color: white;
   box-shadow: 0 3px 3px darkgray;
 }
@@ -235,6 +236,7 @@ main {
 }
 .three_towns:last-child{
   margin-bottom: 0;
+ 
 }
 .three_towns div p {
   padding: .5rem;
@@ -246,7 +248,7 @@ main {
 }
 .motto {
   font-size: 1rem;
-  line-height: .25;
+  line-height: 1;
   font-weight: bold;
   font-style: italic;
   color: black;

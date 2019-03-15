@@ -222,6 +222,7 @@ main {
 /* Home Page*/
 
 #threetowns {
+  display: flex;
   flex-flow: row nowrap;
 }
 
@@ -269,7 +270,7 @@ main {
 
 .motto {
   font-size: 1rem;
-  line-height: .25;
+  line-height: 1;
   font-weight: bold;
   font-style: italic;
   color: black;
