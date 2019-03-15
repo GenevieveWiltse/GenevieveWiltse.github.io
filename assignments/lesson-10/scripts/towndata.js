@@ -7,7 +7,7 @@ function townData(){
     request.responseType = 'json';
     request.send();
     request.onload = function(){
-        var triTown = request.response;
+        var three_Towns= request.response;
         townSection(three_Towns);
     }
 
@@ -31,15 +31,15 @@ function townData(){
                 var townAltText = 'Town of ' + towns[i].name + ', Idaho';
                 var townImgSrc = 'images/' + simplename + '.jpg';
 
-                articleBox.setAttribute('class','townbox');
+                articleBox.setAttribute('class','three_towns');
                 townHeader.textContent = towns[i].name;
                 townMotto.textContent = towns[i].motto;
-                townMotto.setAttribute('class','townmotto');
+                townMotto.setAttribute('class','motto');
                 townYear.textContent = 'Founded in ' + towns[i].yearFounded;
                 townPop.textContent = 'Population: ' + towns[i].currentPopulation;
                 townRain.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall + '"';
                 
-                townLink.setAttribute('href', simplename + '-9.html');
+                townLink.setAttribute('href', simplename + '-10.html');
                 townImage.setAttribute('src', townImgSrc);
                 townImage.setAttribute('alt', townAltText);
 
