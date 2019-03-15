@@ -1,0 +1,52 @@
+/* Form */
+
+.menuname {
+    margin-left: 4px
+}
+
+.thankyou {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 .5rem 0 .5rem;
+    padding: 0.5rem;
+    border: 3px solid  black;
+    border-radius: .2rem;
+    font-size: 5rem;
+    margin: 10%;
+    background-color:  #ffc000;
+    text-align: center;
+}
+
+form#st {
+    margin: 10%;
+    font-family: 'Roboto', arial, sans-serif;
+    color: black;
+}
+
+fieldset {
+    background-color:  #2D50FF;
+    border-radius: .8em;
+    margin: 1.5em 0;
+}
+
+legend {
+    color: black;
+    margin-left: 6%;
+    padding: 2px;
+    border: black solid 1px;
+    background-color:  #ffc000;
+    border-radius: .4em;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: .5em;
+    color: white;
+}
+
+label span {
+    display: block;
+    padding-top: .3em;
+}
+
