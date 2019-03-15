@@ -230,12 +230,11 @@ main {
   padding: .25em
 }
 
-
 .three_towns {
   flex-flow: column nowrap;
   width:100%;
   max-height: 100%;
-  align-self:stretch;
+  align-self:flex-start;
   align-items: center;
   margin-bottom: 0;
   background-color: white;
