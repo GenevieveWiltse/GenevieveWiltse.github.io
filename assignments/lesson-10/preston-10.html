@@ -25,6 +25,10 @@
     <script src="scripts/hamburger.js"></script>
 
     <script src="scripts/windchill.js"></script>
+
+    <script src="scripts/forecast.js"></script>
+
+    <script src="scripts/summary.js"></script>
        
     </head>
 <body onload="calculatewindchill()">
@@ -58,42 +62,14 @@
         <figure class="hero">
             <img alt="Preston Idaho" srcset="images/hero_banner_500.jpg 500w, images/hero_banner_768.jpg 768w, 
             images/hero_banner_1366.jpg 1366w, images/hero_banner_1920.jpg 1920w" sizes="100vw" src="images/hero_banner_500.jpg">
-            <aside class="summary">
-                <h3>Weather Summary</h3>
-                <div class="highlow">
-                <p>
-                    High:   
-                    <span id="highTemp">40</span>
-                    °F
-                </p>
-                <p>
-                    Low:    
-                    <span id="lowTemp">20</span>
-                    °F
-                </p>
-                </div>
-                <div class="conditions">
-                <p>Currently: 32 °F</p>
-                <p>Precipitation: 5%</p>
-                <p>Humidity:      10%</p>
-                <p>Wind Speed:    
-                    <span id="windSpeed">25</span>
-                    mph
-                </p>
-                <p> Wind Chill: 
-                    <span id="windchill"></span>
-                    °F
-                </p>
-                </div>
-            </div>
-                </aside>
-                </figure>
-            <section class="fiveday">
-            <h2>Five Day Forecast</h2>
-                <div class="forecastbox">
-                    <img class="forecast" src="images/weekly_forecast.jpg" alt="Monday to Friday Weather">
-                </div>
+            <div class="weathersummary">
+        </figure> 
+            <section class="forecast">
+                    <div class="box2">
+                <h2>5 Day Forecast</h2>
+               <!--JSON Data-->
             </section>
+        </div>
             <article class="featured">
                 <div class="featured_item">
                     <img class="featured_item" src="images/rainbow_resize.jpg" alt="Rainbow in field">
@@ -142,8 +118,15 @@
         <div>
          <span id="currentdate">February 22, 2019</span>
         </div>
+        <div>
+            Weather source provided by: 
+            <a href="https://openweathermap.org/" title="Open Weather Maps">Open Weather Maps</a>
+             </div>
+            </div>
         </footer>
     </main>
-   <script>currentdate()</script>
+   <script>currentdate();forecast();weathersummary();</script>
+
+  
 </body>
 </html>
