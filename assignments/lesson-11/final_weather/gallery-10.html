@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Gallery of weather images for local Idaho area">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     
+    <title>Preston, Idaho Weather | SkyNow.info</title>
+      
+    <meta name="description" content="Local weather forecast for Preston, Idaho">
+
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <link href="css/small-10.css" rel="stylesheet" media="screen and (max-width: 500px)">
+    
+    <link href="css/medium-10.css" rel="stylesheet" media="screen and (min-width: 501px)">
+    
+    <link href="css/large-10.css" rel="stylesheet" media="screen and (min-width: 925px)">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script src="scripts/currentdate.js"></script>
+
+    <script src="scripts/hamburger.js"></script>
+
+    <script src="scripts/windchill.js"></script>
+
+    <style type="text/css"></style>
+        
+    </head>
+<body>
+    <header> 
+        <!--Header divisions for CSS Styling-->
+        <div class="headwrap">
+        <div class="sitelogo">
+            <a href="index.html">
+        <img src="images/logo_draft.png" alt="SkyNow.info logo">
+            <div class="motto">Looking Down to See What's Up</div>
+            <br>
+            </a>
+        </div>
+    <nav>
+    <div class="menubutton">
+        <a onclick="toggleNav()">Menu</a>        
+    </div>
+
+        <ul id="navigation" class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-4.html">Preston</a></li>
+            <li><a href="sodasprings-10.html">Soda Springs</a></li>
+            <li><a href="fishhaven-10.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <h2>Weather Gallery</h2>
+            <div class="gallery_grid">
+
+                <figure class="gallery_grid">
+                     <img src="images/fish_haven_bluesky.jpg" alt="gallery image">
+                     <p class="figcaption">Blue skies in Fish Haven</p>           
+                </figure>
+
+
+                 <figure class="gallery_grid">
+                    <img src="images/preston_full_moon.jpg" alt="gallery image">
+                    <p class="figcaption">Nightly cloud cover over Preston</p>           
+                </figure>
+
+                <figure class="gallery_grid">
+                     <img src="images/soda_springs_countryside.jpg" alt="gallery image">
+                     <p class="figcaption">Soda Springs getting ready for first snowfall</p>           
+                </figure>
+
+                <figure class="gallery_grid">
+                    <img src="images/fish_haven_rain.jpg" alt="gallery image">
+                    <p class="figcaption">Rain clouds don't dampen Fish Haven's spirits</p>           
+                </figure>
+
+                <figure class="gallery_grid">
+                     <img src="images/preston_ice_river.jpg" alt="gallery image">
+                     <p class="figcaption">A beautiful December day in Preston</p>           
+                </figure>
+
+                <figure class="gallery_grid">
+                    <img src="images/soda_springs_fall.jpg" alt="gallery image">
+                    <p class="figcaption">Spring was in the air in Soda Springs</p>           
+                </figure>
+
+                <figure class="gallery_grid">
+                    <img src="images/fish_haven_winter.jpg" alt="gallery image">
+                     <p class="figcaption">Farmer's hope for moisture in winter season</p>           
+                </figure>
+
+                <figure class="gallery_grid">
+                    <img src="images/preston_lightning.jpg" alt="gallery image">
+                    <p class="figcaption">Lightning struck surrounding Preston</p>           
+                </figure>
+
+                <figure class="gallery_grid">
+                    <img src="images/soda_springs_winter.jpg" alt="gallery image">
+                    <p class="figcaption">Soda Springs is always a winter wonderland</p>           
+                </figure>
+
+             </div>   
+                                            
+        </section>             
+       <footer>
+        <div>&copy; 2019 |  Genevieve Wiltse  </div>
+        <div>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div>
+         <span id="currentdate">February 22, 2019</span>
+        </div>
+        </footer>
+    </main>
+   <script>currentdate()</script>
+</body>
+</html>

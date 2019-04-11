@@ -1,0 +1,175 @@
+ <!--
+            <article class="threetowns">
+                <div>
+                    <h2>Preston</h2>
+                    <p class="motto">Home of Napoleon Dynamite</p>
+                    <p>Founded in 1866</p>
+                    <p>Population: 5204</p>
+                    <p>Annual Rainfall: 16.65"</p>
+                </div>-->
+                <a href="preston-10.html">
+                    <img src="images/preston_home.jpg" alt="View of Preston town in Idaho">
+                </a>
+        <!--
+            </article>
+            <article class="threetowns">
+                <div>
+                    <h2>Soda Springs</h2>
+                    <p class="motto">Historic Oregon Trail Oasis.</p>
+                    <p class="motto">The Soda is on Us.</p>
+                    <p>Founded in 1858</p>
+                    <p>Population: 2985</p>
+                    <p>Annual Rainfall: 15.75"</p>
+                </div> -->
+                <a href="sodasprings-10.html">
+                <img src="images/soda_springs_home.jpg" alt="View of Soda Springs town in Idaho">
+                </a>
+        <!--    </article>
+            <article class="threetowns">
+                <div>
+                    <h2>Fish Haven</h2>
+                    <p class="motto">This is Fish Heaven</p>
+                    <p>Founded in 1864</p>
+                    <p>Population: 501</p>
+                    <p>Annual Rainfall: 14.2"</p>
+                </div> -->
+                <a href="fish_haven-10.html">
+                    <img src="images/fish_haven_home.jpg" alt="View of Fish Haven town in Idaho">
+                </a>
+            </article> 
+
+              <img class="forecast" src="images/weekly_forecast.jpg" alt="Monday to Friday Weather">
+                </div>
+
+
+           <div class="grid-container">
+                <div class="grid-item">
+                    <span id="dofw1">Wednesday</span>
+                </div>
+                <div class="grid-item">
+                    <span id="dofw2">Thursday</span>
+                </div>
+                <div class="grid-item">
+                    <span id="dofw"3>Friday</span>
+                </div>
+                <div class="grid-item">
+                    <span id="dofw4">Saturday</span>
+                </div>
+                <div class="grid-item">
+                    <span id="dofw5">Sunday</span>
+                </div>
+                <div class="grid-item" id="dicon1">
+                     <img src="http://openweathermap.org/img/w/02d.png" alt="Partly Cloudy">
+                <div class="grid-item" id="dicon2">
+                    <img src="http://openweathermap.org/img/w/02d.png" alt="Partly Cloudy">
+                <div class="grid-item" id="dicon3">
+                    <img src="http://openweathermap.org/img/w/04d.png" alt="Stormy">
+                <div class="grid-item" id="dicon4">
+                    <img src="http://openweathermap.org/img/w/03d.png" alt="Cloudy">
+                <div class="grid-item" id="dicon5">
+                    <img src="http://openweathermap.org/img/w/01d.png" alt="Sunny">
+                </div>
+                <div class="grid-item">
+                    <span id="dtemp1">38</span>60</span>
+                     "° F"
+                </div>
+                <div class="grid-item">
+                    <span id="dtemp2">38</span>60</span>
+                    "° F"
+                </div>
+                    <div class="grid-item">
+                    <span id="dtemp3">38</span>60</span>
+                     "° F"
+                </div>
+                <div class="grid-item">
+                    <span id="dtemp4">38</span>60</span>
+                     "° F"
+                </div>
+                <div class="grid-item">
+                    <span id="dtemp5">38</span>60</span>
+                    "° F"
+                        </div>
+                    </div>    
+
+
+
+            <div class="highlow">
+                <p>
+                    High:   
+                    <span id="highTemp">40</span>
+                    °F
+                </p>
+                <p>
+                    Low:    
+                    <span id="lowTemp">20</span>
+                    °F
+                </p>
+                </div>
+
+
+                 <script id="weatherScript" data-town="Preston" src="scripts/weather.js"></script>
+   <script id="townEventScript" data-town="Preston" src="scripts/displayTownEvents.js"></script>
+
+<h3>Weather Summary</h3>
+                <hr>
+                <div class="conditions">
+                <p>Currently: 32 °F</p>
+                <p>Temperature: 76</p>
+                <p>Humidity:      10%</p>
+                <p>Wind Speed:    
+                    <span id="windSpeed">25</span>
+                    mph
+                </p>
+                <p> Wind Chill: 
+                    <span id="windchill"></span>
+                    °F
+                </p>
+                </div>
+            </div>
+                </aside>
+                </figure>
+
+
+
+ <!--JSON Data-->             
+               <!-- <h3>Weather Summary</h3>
+                <hr>
+                <div class="conditions">
+                <p>Currently: 32 °F</p>
+                <p>Temperature: 76</p>
+                <p>Humidity:      10%</p>
+                <p>Wind Speed:    
+                    <span id="windSpeed">25</span>
+                    mph
+                </p>
+                <p> Wind Chill: 
+                    <span id="windchill"></span>
+                    °F
+                </p>
+                </div>
+            </div> -->
+
+
+            *.forecast {
+  margin: 0;
+  padding: .5rem 0 .5rem 0;
+  width:100%;
+  border-radius: .2rem;
+  text-align: center;
+}
+/*.forecastbox {
+  display:inline-flex;
+  flex-flow: row nowrap;
+   margin: .25rem;
+  background-color: #ffffff;
+  padding: .5rem;
+  max-width: 100%;
+}*/
+
+/* width: 100%;
+  height: 100%;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}*/
+
+
